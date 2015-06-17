@@ -1,10 +1,10 @@
 <?php
 
 /**
- * Plugin Name: Casals Online SEO.
+ * Plugin Name: Casals Online SEO
  * Plugin URI: http://casalsonline.es
  * Description: SEO improvements for Wordpress site.
- * Version: 0.0.3
+ * Version: 0.0.4
  * Author: Casals Online, S.L.
  * Author URI: http://casalsonline.es
  * Text Domain: casals
@@ -12,6 +12,7 @@
  * Network: true
  * License: GPL2
  */
+
 require_once 'settings.php';
 require_once _FUNCTIONS_PATH . 'actions.php';
 require_once _FUNCTIONS_PATH . 'filters.php';

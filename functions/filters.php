@@ -46,3 +46,13 @@ function cos_construct_user_bio_box($user_id) {
     ob_end_clean();
     return $bio_user_box;
 }
+
+/**
+ * Change web page title
+ */
+function cos_the_title() {
+
+    return get_option('blogname');
+}
+
+add_filter('wp_title', 'cos_the_title');

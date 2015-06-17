@@ -11,7 +11,8 @@ function cos_enqueue_scripts() {
 add_action('admin_menu', 'cos_menu');
 
 function cos_menu() {
-    add_menu_page(_PAGE_TITLE, _MENU_TITLE, 'manage_options', _MENU_SLUG, 'admin_config_page', _IMG_DIR . 'favicon.png', 80);
+    add_submenu_page('options-general.php', _PAGE_TITLE, _MENU_TITLE, 'manage_options', _MENU_SLUG, 'admin_config_page');
+//    add_menu_page(_PAGE_TITLE, _MENU_TITLE, 'manage_options', _MENU_SLUG, 'admin_config_page', _IMG_DIR . 'favicon.png', 80);
 }
 
 /* Admin configuration page */
